@@ -1,6 +1,8 @@
 # Illuminati
 This repository contains all the code developed to create the game illuminati
 
+The puzzle implemented refers to the Illuminati, which is played in an areaquadri axadinha, and each house in this area can be of different types. An empty house can be represented by 'o' when it is illuminated, '.' when it is known beforehand that it is impossible to put a lamp and '-' in any other case. A house with a lamp will illuminate the line and column in which it is placed, being represented by '@'. In turn, the locked house indicates an obstacle that prevents the passage of light, being represented by an 'x' when it comes to a simple obstacle. It is denoted that a locked house with a certain number should be surrounded orthogonally by exactly n lamps. In addition, one lamp cannot illuminate another, since a lamp illuminates the line and column in which it is located, until it finds a locked house.
+
 # What can we find in this repository?
 
 Here we can find all the files created to rum the game, such as:
@@ -21,9 +23,7 @@ This file contains the class IlluminatiWindow responsible for creating a window 
 
 ## IlluminatiEngine.py
 
-In this file we find the class IlluminatiEngine, which allws us to read a board and save an historic with all the plays made in the baord.
-
-Other functions where added to, for example, eliminate the last board saved in the historic and to help the programm to find a solution in an automatic way.
+In this file we find the class IlluminatiEngine, which implements methods (called in the IlluminatiShell) to help change the board where we have the puzzle.
 
 ## IlluminatiShell.py
 
@@ -50,16 +50,16 @@ Command that allows the player to select the place where the lamp is placed or f
 Command that illuminates the board when it finds a lamp. The board is the parameter of this function.
 
 ### do_est1
-Command that implements a strategy to solve the puzzle. This allows to automatically place lamps in the neighbor houses of a blocked house, if the number of available houses is equal to the number of the blocked house. The board is the parameter of this function.
+Command that implements a strategy to solve the puzzle. This allows to automatically place lamps in the neighbor houses of a locked house, if the number of available houses is equal to the number of the locked house. The board is the parameter of this function.
 
 ### do_est2
-Command that implements a strategy to solve the puzzle. This allows the player to automatically illuminate the row and column where the lamp was placed until it finds the limit of the board or a blocked house. The board is the parameter of this function.
+Command that implements a strategy to solve the puzzle. This allows the player to automatically illuminate the row and column where the lamp was placed until it finds the limit of the board or a locked house. The board is the parameter of this function.
 
 ### do_est3
 Command that implements a strategy to solve the puzzle. This enables the possibility of making impossible plays by marking the spaces that would lead to them. The board is the parameter of this function.
 
 ### do_est4
-Command that implements a strategy to solve the puzzle. This function not only enables the placement of lamps in the two houses shared in the diagonal of specific combinations (if the blocked houses are 0 and 2, or 1 and 3), but also places necessarily two lamps in a diagonal of a specific pair of blocked houses, like 2 and 3.  The board is the parameter of this function.
+Command that implements a strategy to solve the puzzle. This function not only enables the placement of lamps in the two houses shared in the diagonal of specific combinations (if the locked houses are 0 and 2, or 1 and 3), but also places necessarily two lamps in a diagonal of a specific pair of locked houses, like 2 and 3.  The board is the parameter of this function.
 
 ### do_est5
 Command that implements a strategy to solve the puzzle. This allows us to place a lamp where the house can be illuminated if there is a lamp on it. The board is the parameter of this function.
