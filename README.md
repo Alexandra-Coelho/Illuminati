@@ -27,4 +27,21 @@ Other functions where added to, for example, eliminate the last board saved in t
 
 ## IlluminatiShell.py
 
-File with the class IlluminatShell. This class implements all the functions that allow us to make plays in the board.
+File with the class IlluminatShell. This class implements all the functions that allow us to make plays in the board and save the board state.
+
+In this files were implemented specific functions:
+### do_mr
+Command that shows the existing puzzle in a file.
+
+### do_cr
+Command that takes a name file as his parameter and loads it to the memory.
+
+### do_gr
+Command that allows us to save the board in his current state. 
+Takes the name file of the board used as his parameter.
+
+### do_jr
+Command that allows the player to select the place where the lamp is placed or from where it is removed.
+It uses as his parameters 2 numbers that indicate the row and column where we want to put or remove the lamp.
+
+### do_
