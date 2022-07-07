@@ -21,7 +21,8 @@ This file contains the class IlluminatiWindow responsible for creating a window 
 
 ## IlluminatiEngine.py
 
-
+In this file we find the class IlluminatiEngine, which allws us to read a board and save an historic with all the plays made in the baord.
+Other functions where added to, for example, eliminate the last board saved in the historic and to help the programm to find a solution in an automatic way.
 
 ## IlluminatiShell.py
 
