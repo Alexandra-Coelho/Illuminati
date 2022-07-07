@@ -5,7 +5,7 @@ This repository contains all the code developed to create the game illuminati
 
 Here we can find all the files created to rum the game, such as:
 
-## grafics.py
+## graphics.py
 
 The library is designed to make it very easy for novice programmers to
 experiment with computer graphics in an object oriented fashion. It is
@@ -15,8 +15,10 @@ Introduction to Computer Science" (Franklin, Beedle & Associates).
 LICENSE: This is open-source software released under the terms of the
 GPL (http://www.gnu.org/licenses/gpl.html).
 
-## illuminatiWindow.py
+## IlluminatiWindow.py
 
-## illuminatiEngine.py
+This file contains the class responsible for creating a window 
 
-## illuminati
+## IlluminatiEngine.py
+
+## IlluminatiShell.py
