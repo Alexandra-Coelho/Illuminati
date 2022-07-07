@@ -17,8 +17,10 @@ GPL (http://www.gnu.org/licenses/gpl.html).
 
 ## IlluminatiWindow.py
 
-This file contains the class responsible for creating a window 
+This file contains the class IlluminatiWindow responsible for creating a window so we can have a graphic representation of the board.
 
 ## IlluminatiEngine.py
+
+
 
 ## IlluminatiShell.py
