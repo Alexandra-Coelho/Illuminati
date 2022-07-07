@@ -24,3 +24,5 @@ This file contains the class IlluminatiWindow responsible for creating a window 
 
 
 ## IlluminatiShell.py
+
+File with the class IlluminatShell. This class implements all the functions that allow us to make plays in the board.
