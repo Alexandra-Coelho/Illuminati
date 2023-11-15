@@ -75,6 +75,12 @@ Command that automatically solves the puzzle. The board is the parameter of this
 ### do_ver
 Command that let's us visualize the current state of the puzzle.
 
+### do_sair
+Command that allows us to quit the program.
+
+### cmdloop
+Creats a menu to access all the previous functions using keywords.
+
 
 ## Authors: 
 
@@ -82,9 +88,3 @@ Command that let's us visualize the current state of the puzzle.
 - Andreia Gomes (PG45463)
 - Catarina Ferreira (PG45467)
 - Daniela Lemos (PG45469)
-
-### do_sair
-Command that allows us to quit the program.
-
-### cmdloop
-Creats a menu to access all the previous functions using keywords.
